@@ -1,0 +1,41 @@
+<p>register works!</p>
+<form class="example-form">
+
+        <table ><tr>
+            <td><mat-form-field>
+              <mat-label>Email</mat-label>
+              <input matInput [(ngModel)]="user.email" />
+            </mat-form-field></td>
+            <td><mat-form-field>
+              <mat-label>Password</mat-label>
+              <input matInput [(ngModel)]="user.password" />
+            </mat-form-field></td>
+          </tr></table>
+
+          <table><tr>
+            <td><mat-form-field>
+              <mat-label>First Name</mat-label>
+              <input matInput [(ngModel)]="user.firstName" />
+            </mat-form-field></td>
+            <td><mat-form-field>
+              <mat-label>Last Name</mat-label>
+              <input matInput [(ngModel)]="user.lastName" />
+            </mat-form-field></td>
+          </tr></table>
+
+          <table ><tr>
+            <td><mat-form-field>
+              <mat-label>Address</mat-label>
+              <input matInput [(ngModel)]="user.address" />
+            </mat-form-field></td>
+            <td><mat-form-field>
+              <mat-label>Is Admin</mat-label>
+              <input matInput [(ngModel)]="user.isAdmin" />
+            </mat-form-field></td>
+          </tr></table>
+
+          <div>
+            <button mat-raised-button color="primary" (click)="register()">register</button>
+          </div>
+</form>
+  
